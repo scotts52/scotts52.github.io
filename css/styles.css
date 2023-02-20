@@ -120,7 +120,7 @@ header nav ul li#logo a {
 #hero .large-ribbon {
 	height: 190px;
 	width: 150px;
-	background: url('') top left no-repeat;
+	background: top left no-repeat;
 	text-indent: -9999px;
 	position: absolute;
 	top: -23px;
@@ -190,7 +190,7 @@ footer.main a:hover {
 
 #uncopyright, #credits {
 	width: 240px;
-	float: left;
+	float: middle;
 	padding: 10px 0 10px 30px;
 }
 
@@ -211,5 +211,32 @@ footer.main a:hover {
 
 
 
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 98%);
+  color: #333;
+  font: 100% / normal sans-serif;
+}
 
+main {
+  margin: 0 auto;
+  padding: 4rem 0;
+  width: 90%;
+  max-width: 60rem;
+}
+
+form {
+  box-sizing: border-box;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 8px solid hsl(0, 0%, 90%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.full-width {
+  grid-column: span 2;
+}
 

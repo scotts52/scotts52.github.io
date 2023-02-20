@@ -22,11 +22,11 @@
             <header class="main">
                 <nav>
                     <ul>
-                        <li><a href="">My Story</a></li>
+                        <li><a href="#my_story">My Story</a></li>
                         <li><a href="">3rd place</a></li>
                         <li id="logo"><a href="">Scott Stevenson</a></li>
-                        <li><a href="">well well</a></li>
-                        <li><a href="">contact me</a></li>
+                        <li><a href="#well.well.well">well well</a></li>
+                        <li><a href="#contact-me">contact me</a></li>
                     </ul>
                 </nav>
             </header>
@@ -41,7 +41,7 @@
 
             <div id="whole-story">
                 <h1>My <em>Story</em></h1>
-                <p class="lead">This is just a placeholde so have a fact. 
+                <p class="lead"><a id="my_story"></a>This is just a placeholde so have a fact. 
                     A shark is the only known fish that can blink with both eyes.</p>
 
                 <div id="story-excerpt">
@@ -65,7 +65,7 @@
 
                     <article class="news">
                         <header>
-                            <h3>Well...Welll...Well its another placeholder</h3>
+                            <h3><a id="well.well.well"></a>Well...Welll...Well its another placeholder</h3>
                             <time datetime="2023-02-17">February 17, 2023</time>
                         </header>
 
@@ -103,6 +103,41 @@
             </div>
             <hr>
         </div>
+<main>
+    <a id="contact-me"></a>
+  <form>
+    <div>
+      <label for="name">Name</label>
+      <input id="name" type="text" />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" />
+    </div>
+    <div>
+      <label for="comp">Code compitence level? </label>
+      <select id="comp">
+        <option value="sass">One</option>
+        <option value="less">Two</option>
+        <option value="stylus">Three</option>
+        <option value="postcss">Four</option>
+        <option value="other">Five</option>
+      </select>
+    </div>
+    <div class="full-width">
+      <label for="message">Message</label>
+      <textarea id="message"></textarea>
+    </div>
+    <div class="full-width">
+      <input type="checkbox" id="newsletter" />
+      <label for="newsletter">Receive my newsletter?</label>
+    </div>
+    <div class="full-width">
+      <button type="submit">Send Response</button>
+      <button type="reset">Clear Form</button>
+    </div>
+  </form>
+</main>
         <footer class="main">
             <div class="container">
 
